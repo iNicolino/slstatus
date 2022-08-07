@@ -69,6 +69,8 @@ static const struct arg args[] = {
 	{ separator, " | ",               NULL },
 	{ ram_used, "RAM %s",             NULL },
 	{ separator, " | ",               NULL },
+	{ run_command, "VOL %s",          "checkvol"},
+	{ separator, " | ",               NULL },
 	{ battery_state, "BAT %s",       "BAT0" },
 	{ battery_perc, "%s%%]",         "BAT0" },
 	{ separator, " ",                 NULL },	
