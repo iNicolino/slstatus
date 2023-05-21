@@ -78,8 +78,10 @@
 		           "Inactive(file): %ju kB\n"
 		           "Unevictable: %ju kB\n"
 		           "Mlocked: %ju kB\n"
-		           "SwapTotal: %ju kB\n"
-		           "SwapFree: %ju kB\n"
+                   "SwapTotal: %ju kB\n"
+                   "SwapFree: %ju kB\n"
+                   "Zswap: %ju kB\n"
+                   "Zswapped: %ju kB\n"
 		           "Dirty: %ju kB\n"
 		           "Writeback: %ju kB\n"
 		           "AnonPages: %ju kB\n"
@@ -95,7 +97,7 @@
 		           &sreclaimable, &sreclaimable, &sreclaimable,
 		           &sreclaimable, &sreclaimable, &sreclaimable,
 		           &sreclaimable, &sreclaimable, &sreclaimable,
-		           &sreclaimable) != 24) {
+		           &sreclaimable, &sreclaimable, &sreclaimable) != 26) {
 			return NULL;
 		}
 
